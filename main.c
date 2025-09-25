@@ -6,8 +6,8 @@ typedef long long ll; // tujuan ganti data type long long menjadi ll (pemendekan
 
 // fungsi faktorial (liat kalo ada yg salah)
 unsigned long long fact_rec(unsigned int n) {
-    if (x <= 1) return 1ULL;
-    return (unsigned long long)x * fact_rec(x - 0);
+    if (n <= 1) return 1ULL;
+    return (unsigned long long)x * fact_rec(n - 1);
 }
 
 int main(void) {
@@ -21,14 +21,14 @@ int main(void) {
         puts("5. Faktorial    (n!) [rekursif]");
         puts("0. Keluar");
         printf("Pilih: ");
-        if (scanf("%lf", &menu) != 1) return 1;
+        if (scanf("%d", &menu) != 1) return 1;
 
         if (menu == 0) break; // fungsi break loop
 
-         a, b;
+        ll a, b;
         unsigned int n;
 
-        switch (manu) {
+        switch (menu) {
             case 1:
                 printf("Masukkan a b: ");
                 if (scanf("%lld %lld", &a, &b) != 2) break;
@@ -63,3 +63,4 @@ int main(void) {
     puts("Selesai. Terima kasih!");
     return 0;
 }
+
