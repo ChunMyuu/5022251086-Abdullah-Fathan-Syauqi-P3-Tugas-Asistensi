@@ -7,7 +7,7 @@ typedef long long ll; // tujuan ganti data type long long menjadi ll (pemendekan
 // fungsi faktorial (liat kalo ada yg salah)
 unsigned long long fact_rec(unsigned int n) {
     if (n <= 1) return 1ULL;
-    return (unsigned long long)x * fact_rec(n - 1);
+    return (unsigned long long)n * fact_rec(n - 1);
 }
 
 int main(void) {
@@ -63,4 +63,5 @@ int main(void) {
     puts("Selesai. Terima kasih!");
     return 0;
 }
+
 
